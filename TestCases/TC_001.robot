@@ -6,6 +6,7 @@ Test Teardown  Close Browser Window
 
 *** Test Cases ***
 Robot First Test Case
+    [Tags] regression
     ${Res}=  Get Title Log
     Enter: Username Password Email  ${Res}  test@gmail.com  1234567
     Select Radio button and Checkbox
@@ -13,6 +14,7 @@ Robot First Test Case
 
 
 Robot Second Test Case
+    [Tags] sanity
     Select Radio button and Checkbox
     Create Folder at Runtime    CreatedFolderName
     Concatenate Username and Password  Testing  World

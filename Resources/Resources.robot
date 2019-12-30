@@ -47,3 +47,9 @@ Concatenate Username and Password
     [Arguments]  ${username}    ${password}
     ${resultval}=  concatinate_two_values  ${username}  ${password}
     Log  ${resultval}
+
+Select browser tab
+    [Arguments]   ${tab}
+    select window   ${tab}
+    ${url1}=    get location
+    log to console  ${url1}
